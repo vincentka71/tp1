@@ -7,7 +7,6 @@ body {
 #container {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    font-weight: bolder;
     display: grid;
     grid-template-columns: 2;
     grid-template-rows: 65px;
@@ -69,7 +68,6 @@ nav {
     color: blanchedalmond;
     text-decoration: none;
     font-size: 20px;
-    font-weight: bold;
 }
 
 .nav-liste-items a:hover {
@@ -110,4 +108,12 @@ footer {
     section {
         display: none;
     }
+    .nav-liste {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav {
+        padding-top: 0;
+    }
+    
 }
