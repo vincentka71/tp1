@@ -82,8 +82,25 @@ article {
 }
 footer {
     background-color: grey;
+    color: #333;
     grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+footer div {
+    width: 35%;
+    padding: 25px;
+}
+.liste-footer {
+    border-left: 1px solid black;
+}
+.footer-liste a {
+    text-decoration: none;
+    color: #333;
+}
+
 @media screen and (max-width:900px) {
     #container {
     font-family: Arial, Helvetica, sans-serif;
@@ -115,5 +132,22 @@ footer {
     nav {
         padding-top: 0;
     }
-    
+    footer {
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    footer div {
+        width: 100%;
+        padding: 0;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        display: flex;
+        justify-content: center;
+    }
+    .liste-footer {
+        border-left: 0;
+        border-top: 1px solid black;
+    }
 }
