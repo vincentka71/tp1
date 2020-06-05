@@ -78,7 +78,42 @@ nav {
 article {
     background-color: darkgrey;
     grid-area: article;
-    height: 300px;
+    padding: 10px;
+}
+#image-article {
+    margin-bottom: 8px;
+}
+#texte-article {
+    width: 70%;
+    text-align: justify;
+    font-size: 19px;
+}
+#photos-article {
+    width: 28%;
+}
+#content-article {
+    display: flex;
+    justify-content: space-between;
+}
+.reservation {
+    text-align: center;
+    background-color: salmon;
+    color: seashell;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 25px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.reservation:hover {
+    background-color: tomato;
+}
+article img {
+    width: 100%;
 }
 footer {
     background-color: grey;
@@ -121,7 +156,6 @@ footer div {
         justify-content: center;
         width: 100%;
     }
-
     section {
         display: none;
     }
@@ -149,5 +183,20 @@ footer div {
     .liste-footer {
         border-left: 0;
         border-top: 1px solid black;
+    }
+    #content-article {
+        flex-direction: column;
+    }
+    #texte-article {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #photos-article {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #photos-article div {
+        width: 48%;
     }
 }
